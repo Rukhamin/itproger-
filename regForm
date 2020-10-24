@@ -1,0 +1,5 @@
+git branch regForm # создание ветки regForm
+git checkout regForm # переход на ветку
+
+git checkout master # переход на главную ветку
+git merge regForm # объединение веток
