@@ -1,0 +1,4 @@
+git log --oneline # сокращенная форма для получения логов
+git checkout id_commit # просмотр на стадии определенного коммита
+git revert id_commit # возвращения коммита
+git reset id_commit --hard # удаление коммита
