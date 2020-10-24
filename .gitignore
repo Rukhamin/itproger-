@@ -1,0 +1,5 @@
+*.txt # все txt файлы
+/admin/
+/bin/
+/config/ # игнорирование папок
+!/user/auth.php
