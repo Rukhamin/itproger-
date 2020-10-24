@@ -1,0 +1,28 @@
+git init # инициализация
+git add .
+git commit -m "Add all files" # Добавили все файлы в локальное хранилище
+
+# подключение к удаленному репозиторию
+git remote add origin https://github.com/goshadudar/big-task-git.git
+
+git push origin master # добавляем главную ветку
+
+# создаем новую ветку и добавляем её
+git branch admin
+git checkout admin
+
+# на этой стадии добавьте папки и файлы в ваш проект
+
+git add .
+git commit -m "add files to admin branch"
+
+git push origin admin # добавляем вторую ветку
+
+
+git checkout master
+git merge admin
+git log --oneline
+
+# здесь удаляем все до определенного коммита
+# id коммита получаем с логов
+git reset id --hard
